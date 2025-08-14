@@ -1,0 +1,31 @@
+{
+  "name": "super-middleware",
+  "version": "1.0.0",
+  "description": "A reusable middleware package for Express that provides logging, authentication, error handling, and more, without writing custom middleware.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dattasneha/super-middleware.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "jwt",
+    "logging",
+    "auth",
+    "error-handling",
+    "npm-package"
+  ],
+  "author": "Sneha Datta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dattasneha/super-middleware/issues"
+  },
+  "homepage": "https://github.com/dattasneha/super-middleware#readme",
+  "dependencies": {
+    "jsonwebtoken": "^9.0.2"
+  }
+}
