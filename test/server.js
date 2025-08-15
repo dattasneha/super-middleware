@@ -1,6 +1,6 @@
 import express, { json } from "express";
 import cookieParser from "cookie-parser";
-import { jwtAuth, roleAuth, validate, errorHandler, notFoundErrorHandler, etagMiddleware } from "express-middleware-kit";
+import { jwtAuth, roleAuth, validate, errorHandler, notFoundErrorHandler, etagMiddleware } from "@snehadatta/super-middleware";
 import { z } from "zod";
 const app = express();
 app.use(json());

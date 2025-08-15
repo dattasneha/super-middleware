@@ -1,5 +1,5 @@
 {
-  "name": "express-middleware-kit",
+  "name": "@snehadatta/super-middleware",
   "version": "1.0.0",
   "description": "A reusable middleware package for Express that provides logging, authentication, error handling, and more, without writing custom middleware.",
   "type": "module",
@@ -15,9 +15,9 @@
     "express",
     "middleware",
     "jwt",
-    "logging",
     "auth",
     "error-handling",
+    "etag",
     "npm-package"
   ],
   "author": "Sneha Datta",
