@@ -1,7 +1,7 @@
-const jwtAuth = require('./lib/jwtAuth.js');
-const roleAuth = require('./lib/roleAuth.js');
+import jwtAuth from './lib/jwtAuth.js';
+import roleAuth from './lib/roleAuth.js';
 
-module.exports = {
+export default {
     jwtAuth,
     roleAuth
 };

@@ -1,9 +1,9 @@
-const express = require("express");
-const cookieParser = require("cookie-parser");
-const { jwtAuth, roleAuth } = require("super-middleware");
+import express, { json } from "express";
+import cookieParser from "cookie-parser";
+import { jwtAuth, roleAuth } from "super-middleware";
 
 const app = express();
-app.use(express.json());
+app.use(json());
 app.use(cookieParser());
 
 // Fake user database
