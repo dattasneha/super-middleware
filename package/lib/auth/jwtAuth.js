@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken');
+import { verify } from 'jsonwebtoken';
 
 /**
  * Middleware to verify JWT token and authenticate the user.
@@ -24,7 +24,7 @@ function jwtAuth(secret, getUser) {
             }
 
             // Verify the token
-            const decodedToken = jwt.verify(token, secret);
+            const decodedToken = verify(token, secret);
             const userId = decodedToken?.id;
 
             // Fetch user from database
@@ -44,4 +44,4 @@ function jwtAuth(secret, getUser) {
     };
 }
 
-module.exports = jwtAuth;
+export default jwtAuth;

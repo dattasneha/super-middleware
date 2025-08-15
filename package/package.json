@@ -2,6 +2,7 @@
   "name": "super-middleware",
   "version": "1.0.0",
   "description": "A reusable middleware package for Express that provides logging, authentication, error handling, and more, without writing custom middleware.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
