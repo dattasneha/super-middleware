@@ -1,11 +1,11 @@
 import express, { json } from "express";
 import cookieParser from "cookie-parser";
-import { jwtAuth, roleAuth, validate, errorHandler, notFoundErrorHandler } from "super-middleware";
+import { jwtAuth, roleAuth, validate, errorHandler, notFoundErrorHandler, etagMiddleware } from "super-middleware";
 import { z } from "zod";
 const app = express();
 app.use(json());
 app.use(cookieParser());
-
+app.use(etagMiddleware);
 // Fake user database
 const users = [
     { id: 1, name: "Alice", role: "admin", email: "alice@gmail.com" },

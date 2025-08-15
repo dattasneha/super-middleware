@@ -1,4 +1,4 @@
-import verify from 'jsonwebtoken';
+import jwt from 'jsonwebtoken';
 
 /**
  * Middleware to verify JWT token and authenticate the user.
@@ -11,7 +11,7 @@ import verify from 'jsonwebtoken';
 export function jwtAuth(secret, getUser) {
     if (!secret) throw new Error('JWT secret is required');
     if (typeof getUser !== 'function') throw new Error('getUser callback is required');
-
+    const { verify } = jwt;
     return async (req, res, next) => {
         try {
             // Extract token from cookies or Authorization header
