@@ -1,7 +1,9 @@
-import jwtAuth from './lib/jwtAuth.js';
-import roleAuth from './lib/roleAuth.js';
+import { jwtAuth } from './lib/auth/jwtAuth.js';
+import { roleAuth } from './lib/auth/roleAuth.js';
+import { validate } from './lib/validation/validate.js';
 
-export default {
+export {
     jwtAuth,
-    roleAuth
+    roleAuth,
+    validate
 };

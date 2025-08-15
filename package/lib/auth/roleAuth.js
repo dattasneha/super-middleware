@@ -3,7 +3,7 @@
  * @param {string[]} allowedRoles - Roles permitted to access the route
  * @returns {function} Middleware function
  */
-function roleAuth(allowedRoles = []) {
+export function roleAuth(allowedRoles = []) {
   if (!Array.isArray(allowedRoles)) {
     throw new Error("roleAuth: allowedRoles must be an array of strings");
   }
@@ -27,4 +27,3 @@ function roleAuth(allowedRoles = []) {
   };
 }
 
-export default roleAuth;

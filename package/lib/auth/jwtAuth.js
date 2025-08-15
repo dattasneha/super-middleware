@@ -1,4 +1,4 @@
-import { verify } from 'jsonwebtoken';
+import verify from 'jsonwebtoken';
 
 /**
  * Middleware to verify JWT token and authenticate the user.
@@ -8,7 +8,7 @@ import { verify } from 'jsonwebtoken';
  * @param {function} getUser - Async function to fetch user by ID
  * @returns {function} Express middleware
  */
-function jwtAuth(secret, getUser) {
+export function jwtAuth(secret, getUser) {
     if (!secret) throw new Error('JWT secret is required');
     if (typeof getUser !== 'function') throw new Error('getUser callback is required');
 
@@ -44,4 +44,4 @@ function jwtAuth(secret, getUser) {
     };
 }
 
-export default jwtAuth;
+
