@@ -1,5 +1,5 @@
 {
-  "name": "super-middleware",
+  "name": "express-middleware-kit",
   "version": "1.0.0",
   "description": "A reusable middleware package for Express that provides logging, authentication, error handling, and more, without writing custom middleware.",
   "type": "module",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dattasneha/super-middleware.git"
+    "url": "git+https://github.com/dattasneha/super-middleware.git"
   },
   "keywords": [
     "express",
