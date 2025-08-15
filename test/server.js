@@ -1,6 +1,6 @@
 import express, { json } from "express";
 import cookieParser from "cookie-parser";
-import { jwtAuth, roleAuth, validate } from "super-middleware";
+import { jwtAuth, roleAuth, validate, errorHandler } from "super-middleware";
 import { z } from "zod";
 const app = express();
 app.use(json());
@@ -47,4 +47,5 @@ app.get("/admin", jwtAuth(JWT_SECRET, getUser), roleAuth(["admin"]), (req, res) 
     res.send(`Hello ${req.user.name}, you are an admin!`);
 });
 
+app.use(errorHandler);
 app.listen(3000, () => console.log("Server running on port 3000"));
