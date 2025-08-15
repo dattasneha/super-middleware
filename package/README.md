@@ -141,10 +141,6 @@ git commit -m "Add my feature"
 
 Push and open a Pull Request
 
-## License
-
-This project is licensed under the MIT License.
-
 ## Support
 
 If you encounter any issues or have questions, please open an issue for assistance.
