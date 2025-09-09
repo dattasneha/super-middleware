@@ -32,7 +32,7 @@ npm install @snehadatta/super-middleware
     errorHandler,
     notFoundErrorHandler,
     etagMiddleware
-  } from 'express-middleware-kit';
+  } from '@snehadatta/super-middleware';
   
   const app = express();
   
@@ -144,3 +144,4 @@ Push and open a Pull Request
 ## Support
 
 If you encounter any issues or have questions, please open an issue for assistance.
+
